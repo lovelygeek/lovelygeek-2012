@@ -1,0 +1,237 @@
+/******************************************************************
+Site Name: Lovely Geek
+Author: Cristina Robinson
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of LESS' great features: 
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques like box shadow and
+border-radius.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more. See what I did there? Nice.
+
+Helpful Articles or Links:
+
+******************************************************************/
+/*********************
+TOOLS
+*********************/
+/* http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px #999999;
+  -moz-box-shadow: 0 8px 6px -6px #999999;
+  box-shadow: 0 8px 6px -6px #999999;
+}
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/*********************
+CLEARFIXIN'
+*********************/
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*********************
+COLORS
+*********************/
+/* this is pulled from Bootstrap */
+/*********************
+BUTTONS
+*********************/
+.button,
+.button:visited {
+  border: 1px solid #65c3c9;
+  border-top-color: #7cccd1;
+  border-left-color: #7cccd1;
+  padding: 4px 12px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 20px;
+  line-height: 21px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #83cfd3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#96d6da), to(#83cfd3));
+  background-image: -webkit-linear-gradient(top, #96d6da, #83cfd3);
+  background-image: -moz-linear-gradient(top, #96d6da, #83cfd3);
+  background-image: -o-linear-gradient(top, #96d6da, #83cfd3);
+  background-image: -ms-linear-gradient(top, #96d6da, #83cfd3);
+  background-image: linear-gradient(top, #96d6da, #83cfd3);
+}
+.button a:hover,
+.button:visited a:hover {
+  color: #ffffff;
+}
+.button:hover,
+.button:visited:hover,
+.button:focus,
+.button:visited:focus {
+  color: #ffffff;
+  border: 1px solid #65c3c9;
+  border-top-color: #4bb9bf;
+  border-left-color: #4bb9bf;
+  background-color: #70c7cd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83cfd3), to(#70c7cd));
+  background-image: -webkit-linear-gradient(top, #83cfd3, #70c7cd);
+  background-image: -moz-linear-gradient(top, #83cfd3, #70c7cd);
+  background-image: -o-linear-gradient(top, #83cfd3, #70c7cd);
+  background-image: -ms-linear-gradient(top, #83cfd3, #70c7cd);
+  background-image: linear-gradient(top, #83cfd3, #70c7cd);
+}
+.button:active,
+.button:visited:active {
+  background-color: #96d6da;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#83cfd3), to(#96d6da));
+  background-image: -webkit-linear-gradient(top, #83cfd3, #96d6da);
+  background-image: -moz-linear-gradient(top, #83cfd3, #96d6da);
+  background-image: -o-linear-gradient(top, #83cfd3, #96d6da);
+  background-image: -ms-linear-gradient(top, #83cfd3, #96d6da);
+  background-image: linear-gradient(top, #83cfd3, #96d6da);
+}
+.button a,
+.button:visited a,
+.button a:visited,
+.button:visited a:visited,
+.button a:active,
+.button:visited a:active,
+.button a:hover {
+  color: #ffffff;
+}
+p.button a:hover {
+  color: #fff;
+}
+/*********************
+TYPOGRAPHY
+*********************/
+.sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.serif {
+  font-family: 'Lora', Georgia, Times, "Times New Roman", serif;
+}
+.script {
+  font-family: 'MishkaRegular', Arial, sans-serif;
+}
+@font-face {
+  font-family: 'MishkaRegular';
+  src: url('../fonts/mishka-webfont.eot');
+  src: url('../fonts/mishka-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/mishka-webfont.woff') format('woff'), url('../fonts/mishka-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+use the best ampersand 
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+/* text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+/*********************
+TEXT SHADOWS
+*********************/
+.white-shadow {
+  text-shadow: 1px 1px #fff;
+}
+.white-on-dark {
+  color: #0b2326;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15), 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.blue-on-white {
+  color: #fff;
+  text-shadow: -1px -1px #36aab6;
+}
+/*********************
+ALERTS & NOTICES
+*********************/
+.help,
+.info,
+.error,
+.success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+.help {
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.info {
+  border-color: #83cfd3;
+  background: #96d6da;
+}
+.error {
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.success {
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+/*********************
+BORDER RADIUS
+*********************/
+/* .borderRadius(4px); */
+/* .borderRadius-left(4px); */
+/* .borderRadius-right(4px); */
+/* .borderRadius-bottom(4px); */
+/* .borderRadius-top(4px); */
+/*********************
+TRANISTION
+*********************/
+/* .transition(all,2s); */
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdue it.
+*********************/
+/* .css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* .boxSizing(border-box); */
+/*********************
+BOX SHADOW
+*********************/
+/* .boxShadow(0 0 4px #444); */
