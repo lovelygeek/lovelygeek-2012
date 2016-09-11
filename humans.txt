@@ -1,0 +1,38 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* AUTHOR */
+	Design and Development: Cristina Robinson
+	Site: www.lovelygeek.net
+	Twitter: @LovelyGeek
+	Location: Cameron Park, CA, USA
+
+/* TOOLS */
+	Apple MacBook Pro
+	Adobe Creative Suite
+	Mishka and Raleway
+	Bones for WordPress
+	Coda
+	CodeKit
+	Transmit
+	DreamHost	
+	
+/* CREDITS */
+	Flute icon designed by magda arques (http://magdaarques.com/) from thenounproject.com
+	Television icon designed by Elena Canton (https://www.behance.net/elenacanton) from thenounproject.com
+	House icon designed by Webalys (http://www.webalys.com/) from iconfinder.com
+	Darth Vader icon designed by Sensible World (http://symbolicons.com/) from iconfinder.com
+	Flat Apple devices designed by Pierre Borodin (http://iampierre.com/) from dribbble	
+
+/* SITE */
+	Launched: June 13, 2012
+	Revised: September 5, 2014
+	Standards: HTML5, Sass, CSS 1|2|3, PHP
+	Components: WordPress, Modernizr, jQuery
+	Browser Support: IE9+, Firefox, Chrome, Safari, etc. plus responsive layout tested on iPhone/iPad/Desktop
+
+
+ ____ ____ ____ ____ ____ ____ _________ ____ ____ ____ ____ 
+||L |||o |||v |||e |||l |||y |||       |||G |||e |||e |||k ||
+||__|||__|||__|||__|||__|||__|||_______|||__|||__|||__|||__||
+|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|
