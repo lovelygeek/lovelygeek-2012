@@ -1,0 +1,3 @@
+Please discretely report vulnerabilities to cristina[at]lovelygeek.net and feel free to sign the guestbook (if you have obtained write access).
+
+/* GUESTBOOK */
